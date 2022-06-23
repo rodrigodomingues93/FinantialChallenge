@@ -35,7 +35,6 @@ namespace CashBookAPI
             services.AddDbContext<CashBookContext>(cfg =>
             {
                 cfg.UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection"));
-
             });
 
             services.AddScoped<ICashBookApplication, CashBookApplication>();

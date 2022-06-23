@@ -20,8 +20,6 @@ namespace CashBookAPI.Controllers
 			_cashBookApplication = cashBookApplication;
 		}
 
-		public List<string> listOfErrors = new List<string>();
-
 		[HttpPost]
 		public async Task<IActionResult> AddCashBook([FromBody] CashBookDto cashBookDto)
 		{
